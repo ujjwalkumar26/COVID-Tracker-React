@@ -3,7 +3,7 @@ body {background:#ccc}
 .box h3{
   text-align:center;
   position:relative;
-  top:120px;
+  top:100px;
 }
 .box {
     width:50%;
@@ -45,4 +45,8 @@ body {background:#ccc}
   transform: rotate(8deg);
   right: 10px;
   left: auto;
+}
+.flag{
+  width: 10vw;
+  height: 5vw;
 }
