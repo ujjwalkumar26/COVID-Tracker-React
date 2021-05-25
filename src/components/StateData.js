@@ -2,7 +2,7 @@ import '../styles/State.css'
 import React from 'react'
 function StateData(params){
     return(<div className="box effect5">
-    <h1>{params.params.loc}</h1>
+    <h1 >{params.params.loc}</h1>
         <h5>Total confirmed cases: {params.params.totalConfirmed}</h5>
         <h5>Cases Foreign: {params.params.confirmedCasesForeign}</h5>
         <h5>Cases Indian: {params.params.confirmedCasesIndian}</h5>
