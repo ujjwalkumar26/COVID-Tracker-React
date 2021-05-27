@@ -2,8 +2,9 @@ import '../App.css';
 import React,{useState} from "react";
 import GetStateData from './GetStateData';
 import GetCountryData from './GetCountryData';
+import Home from './Home';
 function App() {
-  var [view,setView]=useState()
+  var [view,setView]=useState(<Home/>)
 
   function showStates() {
     setView(<GetStateData/>)
@@ -13,7 +14,7 @@ function App() {
     setView(<GetCountryData/>)
   }
   function home() {
-    setView()
+    setView(<Home/>)
   }
   return (
     <div className="App">
