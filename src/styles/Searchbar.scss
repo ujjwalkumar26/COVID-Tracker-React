@@ -1,13 +1,13 @@
 $primary: #1f37a0;
 $secondary: #cce0de;
-$white: #222266;
+$white: #1f37a0;
 $gray: #395a85;
 .form__group {
   position:relative;
   padding: 15px 0 0;
   margin-top: 10px;
-  margin-left: 40%;
-  width: 30%;
+  margin-left: 39%;
+  width: 25%;
   margin-bottom: 2%;
 }
 
@@ -39,7 +39,7 @@ $gray: #395a85;
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: $gray;
 }
 
@@ -49,7 +49,7 @@ $gray: #395a85;
     top: 0;
     display: block;
     transition: 0.2s;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: $primary;
     font-weight:700;    
   }
@@ -59,18 +59,7 @@ $gray: #395a85;
   border-image: linear-gradient(to right, $primary,$secondary);
   border-image-slice: 1;
 }
-/* reset input */
+
 .form__field{
   &:required,&:invalid { box-shadow:none; }
 }
-/* demo */
-// body {
-//   font-family: 'Poppins', sans-serif; 
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   font-size: 1.5rem;
-//   background-color:#222222;
-// }

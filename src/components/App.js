@@ -1,9 +1,10 @@
-import '../App.css';
+import '../styles/App.css';
 import React,{useState} from "react";
 import GetStateData from './GetStateData';
 import GetCountryData from './GetCountryData';
 import Home from './Home';
 import Header from './Header';
+import Footer from './Footer';
 function App() {
   var [view,setView]=useState(<Home/>)
   const changeView = (show)=>{
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <Header showDisplay={changeView}/>
       {view}
+      <Footer showDisplay={changeView}/>
     </div>
   );
 }
