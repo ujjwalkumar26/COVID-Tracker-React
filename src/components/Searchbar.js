@@ -1,12 +1,26 @@
 import React from 'react';
-import '../styles/Searchbar.css'
+import '../styles/Searchbar.scss'
 function Searchbar(props){
-    return (<div className= 'searchbox'>
+    return(
+    // return (<div className= 'searchbox'>
+    // <input 
+    // className='searchbar'
+    // type='search'
+    // onChange={props.handleChange} 
+    // placeholder={props.placeholder}/>       
+    // </div>
+    <div className="form__group field">
     <input 
-    className='searchbar'
-    type='search'
+    type="input" 
+    className="form__field" 
+    placeholder={props.placeholder}
     onChange={props.handleChange} 
-    placeholder={props.placeholder}/>       
-    </div>)
+    name="name" 
+    id='name' 
+    autofill='off'
+     />
+    <label for="name" class="form__label">{props.placeholder}</label>
+    </div>
+    )
 }
 export default Searchbar;

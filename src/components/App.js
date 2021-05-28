@@ -3,24 +3,24 @@ import React,{useState} from "react";
 import GetStateData from './GetStateData';
 import GetCountryData from './GetCountryData';
 import Home from './Home';
+import Header from './Header';
 function App() {
   var [view,setView]=useState(<Home/>)
+  const changeView = (show)=>{
+    if (show ==='home'){
+      setView(<Home/>);
+    }
+    if(show==='states'){
+      setView(<GetStateData/>);
+    }
+    if(show==='countries'){
+      setView(<GetCountryData/>);
+    }
 
-  function showStates() {
-    setView(<GetStateData/>)
-  }
-  
-  function ShowCountries() {
-    setView(<GetCountryData/>)
-  }
-  function home() {
-    setView(<Home/>)
   }
   return (
     <div className="App">
-      <button onClick={showStates}>Indian States Data</button>
-      <button onClick = {ShowCountries}>World Countries Data</button>
-      <button onClick={home}>Home page</button>
+      <Header showDisplay={changeView}/>
       {view}
     </div>
   );

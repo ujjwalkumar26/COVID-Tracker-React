@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar {
+  background-color: #1e1e30;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: "McLaren";
+  font-weight: 200;
+}
+.logo{
+  width: 10vw;
+  height: 3vw;
+}

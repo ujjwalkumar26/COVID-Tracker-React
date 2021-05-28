@@ -35,21 +35,21 @@ function WorldGraph(){
             labels: dailyData.slice(0,31).map(({date})=>date),
             redraw: true,
             datasets:[{
-                data: dailyData.map(({new_confirmed})=>new_confirmed),
+                data: dailyData.slice(0,31).map(({new_confirmed})=>new_confirmed),
                 label: 'New Confirmed',
                 borderColor: '#e60000',
                 fill: true,
                 tension: 0.3,
                 backgroundColor: 'rgba(255,0,0,0.1)'
             },{
-                data: dailyData.map(({new_recovered})=>new_recovered),
+                data: dailyData.slice(0,31).map(({new_recovered})=>new_recovered),
                 label: 'New Recovered',
                 borderColor: '#33cc33',
                 backgroundColor:'rgb(45, 235, 60,0.1)',
                 fill: true,
                 tension: 0.3
             },{
-                data: dailyData.map(({new_deaths})=>new_deaths),
+                data: dailyData.slice(0,31).map(({new_deaths})=>new_deaths),
                 label: 'New Deaths',
                 borderColor: '#8c8c8c',
                 fill: true,

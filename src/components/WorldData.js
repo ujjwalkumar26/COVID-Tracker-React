@@ -22,14 +22,19 @@ function WorldData(){
         fetchData();
     },[])
 
-    return(<div className="boxy effect5">
-        <h2>Global Data</h2>
-        <h5>NewConfirmed: {Data.NewConfirmed}</h5>
-        <h5>TotalConfirmed: {Data.TotalConfirmed}</h5>
-        <h5>NewDeaths: {Data.NewDeaths}</h5>
-        <h5>NewRecovered: {Data.NewRecovered}</h5>
-        <h5>TotalRecovered: {Data.TotalRecovered}</h5>
-        <span>Last updated: {Data.Date}</span>
-    </div>)
+    return(
+        <div class="card bg-light mb-3 wide">
+        <div class="card-header">Global COVID-19 Data</div>
+            <div class="card-body">
+            <h6 class="card-title">New confirmed cases: {Data.NewConfirmed}</h6>
+            <h6 class="card-title">Total confirmed cases: {Data.TotalConfirmed}</h6>
+            <h6 class="card-title">New deaths: {Data.NewDeaths}</h6>
+            <h6 class="card-title">New recovered: {Data.NewRecovered}</h6>
+            <h6 class="card-title">Total recovered: {Data.TotalRecovered}</h6>
+            <br></br>
+            <span >Last updated: {Data.Date}</span>
+        </div>
+      </div>
+    )
 }
 export default WorldData;
